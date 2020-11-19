@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Yi Lyu's personal website!
+    Name:   Yi Lyu
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yi Lyu in Microsoft</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <p class="home">
+      <a href="../index.html">HOME</a>
+    </p>
+    <table id="main-table">
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <p class="p-center" class="prj">
+                  <prj>Table Service For Azurite </prj>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <heading>Overview</heading>
+                <p>
+                  It was my intern project in Microsoft Shanghai. I was in the
+                  Azure Storgae Team in Microsoft Shanghai Office.
+                  <br />
+                  <br />
+                  Testing cost for applications deployed in Azure Storage can be
+                  a huge budget for both internal and external developers. To
+                  cut down the expenses, many developers are calling for a local
+                  Azure Storage emulator. Previously we have Azure Storage
+                  Emulator, however it has many limitations. It is
+                  single-platform and also requires a lot of dependencies.
+                  <br />
+                  <br />
+
+                  In order to solve current limitations, now we are working on
+                  the new emulator which is cross-platform and much easier to
+                  configure.
+                  <a href="https://github.com/Azure/Azurite">Azurite</a> is now
+                  the
+                  <a
+                    href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite"
+                    >offical recommended</a
+                  >
+                  local simulator for Azure Storage, which enables both internal
+                  developers and external consumers to test their codes locally.
+                  I am responsible for the table service part of Azurite. I
+                  designed the structure according to the real Azure Storage and
+                  simulated the low-level storage part with LokiJS, which is an
+                  open source in-memory database. What’s more, I also designed
+                  mechanisms to bulk process the data and solve consistency
+                  problems. This project has received more than
+                  <span class="emphasis">700 stars</span> on GitHub by now.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <heading>Azurite Table Service Workflow</heading>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-with-padding">
+                <p class="p-center">
+                  <img
+                    src="../images/azuriteTableServices.jpg"
+                    style="margin-left: 0%; width: 80%"
+                  />
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
