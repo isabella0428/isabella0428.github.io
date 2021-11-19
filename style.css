@@ -76,6 +76,16 @@ prj {
   color: #c56900;
 }
 
+.news {
+  color: red;
+}
+
+
+
+.newsContent {
+  color: rgb(230, 140, 215);
+}
+
 .align-right {
   float: right;
   text-align: right;

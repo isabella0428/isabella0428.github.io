@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Yi Lyu's personal website!
+    Name:   Yi Lyu
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yi Lyu in ByteDance</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <p class="home">
+      <a href="../index.html">HOME</a>
+    </p>
+    <table id="main-table">
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <p class="p-center" class="prj">
+                  <prj
+                    >Log support for Godel Hybrid pod scheduler </prj
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <heading>Overview</heading>
+                <p>
+                  It was my intern project in ByteDance Shanghai. I was in the 
+                  Infrasture Team, Toutiao Cloud.
+                  <br />
+                  <br />
+                  Currently there are two main pod scheduler in ByteDance, Yarn and Kubernetes. Yarn is mainly responsible for scheduling long running jobs and Kubernetes is more used for scheduling short running jobs.
+                  We found out that some online jobs have low utilization when they are not in peak hours. So we decide to create a new hybrid scheduler called Godel to co-scheduling both workloads from Kubernetes and Yarn.
+                  My job is to add extra log support for this project in order to release the burden of debugging in a highly distributed situation. 
+                        
+
+                After some while, the servers'situation are different with the one they are in when the pods are scheduled. So we want to do rescheduling to 
+                find a better placement of existing pods. I surveyed many state of the art algorithms about pod rescheduler, which contributed to the final design of pod rescheduler.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <heading>Kubernetes with Yarn</heading>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-with-padding">
+                <p class="p-center">
+                  <img
+                    src="../images/k8sYarn.png"
+                    style="margin-left: 0%; width: 80%"
+                  />
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
