@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Yi Lyu's personal website!
+    Name:   Yi Lyu
+-->
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Yi Lyu in Meta</title>
+	<link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+	<p class="home">
+		<a href="../index.html">HOME</a>
+	</p>
+	<table id="main-table">
+		<tr>
+			<td>
+				<table class="sub-table">
+					<tr>
+						<td class="td-with-padding">
+							<p class="p-center" class="prj">
+								<prj>Creator Composer FeedInsight Tool</prj>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<table class="sub-table">
+					<tr>
+						<td class="td-with-padding">
+							<heading>Overview</heading>
+							<p>
+								It was my intern project in Meta, Menlo Park. I was in the FB Core Mobile Team.
+								<br />
+								<br />
+								Our team provides a lot of advanced features for users with many followers. But we are not sure what the users have gained with our features.
+								My tool will show our team members directly what the creators have been published with our new features.
+
+								I create the frontend using react framework and retrieve the data with GraphQL endpoints. The main hard thing here is how to effectively rank the data.
+								Initially, we just sample part of the posts and do the realtime ranking. But it is really slow since the post data and score data have been distributed in different table schemas and different forms.
+								Then we turn to use an async job and then do the ranking offline.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table id="main-table">
+		<tr>
+			<td>
+				<table class="sub-table">
+					<tr>
+						<td class="td-with-padding">
+							<p class="p-center" class="prj">
+								<prj>Mitigate  facebook  group cross posting timeout problem</prj>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table class="sub-table">
+					<tr>
+						<td class="td-with-padding">
+							<heading>Overview</heading>
+							<p>
+								Currently, all the attachments have been copied sequentially in one consecutive request, which leads to timeout easily. After finding this problem, we decide to use an async job for each group posting job. This not only leaves each group posting job independently from each other, also it mitigates the timeout problem.
+
+								However, it could have high delay. So we add notifications in order to improve the user experience. 
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
